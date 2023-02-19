@@ -1,5 +1,3 @@
-# python3
-
 from collections import namedtuple
 
 Bracket = namedtuple("Bracket", ["char", "position"])
@@ -24,28 +22,18 @@ def find_mismatch(text):
             opening_brackets_stack.pop()
     if opening_brackets_stack:
         return opening_brackets_stack[0].position
-        return "Success"
+    return "Success"
             #pass
 
 
 def main():
-    # decis = input("Input F or I \n")
-    # print()
-    # if decis == "F":
-    #     file= open("./test/F0")
-    #     mismatch = find_mismatch(file)
-    #     file.close()
-    #     print(mismatch)
-    # elif decis == "I":
-        text = input()
-        mismatch = find_mismatch(text)
-        print(mismatch)
-    # else:
-    #     print("Neatpazita komanda")
-    # print()
+    dec = input("Input F or I")
+
+    text = input()
+    mismatch = find_mismatch(text)
     # Printing answer, write your code here'
-    
+    print(mismatch)
 
 
-if __name__ == "__main__":
+if _name_ == "_main_":
     main()
