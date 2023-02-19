@@ -29,7 +29,7 @@ def find_mismatch(text):
 
 
 def main():
-    # decis = input("Input F or I \n")
+    decis = input("Input F or I \n")
     # print()
     # if decis == "F":
     #     file= open("./test/F0")
@@ -39,7 +39,7 @@ def main():
     # elif decis == "I":
     text = input()
     mismatch = find_mismatch(text)
-    print(mismatch)
+    # print(mismatch)
     # else:
     #     print("Neatpazita komanda")
     # print()
