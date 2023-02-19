@@ -30,24 +30,24 @@ def find_mismatch(text):
 
 def main():
     decis = input("Input F or I \n")
-    print()
-    if decis == "F":
-        file= open("./test/F0")
-        mismatch = find_mismatch(file)
-        file.close()
-        print(mismatch)
-    elif decis == "I":
-        text = input()
-        mismatch = find_mismatch(text)
-        print(mismatch)
-    else:
-         print("Neatpazita komanda")
-    print()
+    # print()
+    # if decis == "F":
+    #     file= open("./test/F0")
+    #     mismatch = find_mismatch(file)
+    #     file.close()
+    #     print(mismatch)
+    # elif decis == "I":
+    text = input()
+    mismatch = find_mismatch(text)
+    #   print(mismatch)
+    # else:
+    #     print("Neatpazita komanda")
+    # print()
     # Printing answer, write your code here'
 
 
     # Printing answer, write your code here'
-    #print(mismatch)
+    print(mismatch)
 
 if __name__ == "__main__":
     main()
