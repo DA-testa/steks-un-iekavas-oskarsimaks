@@ -22,17 +22,20 @@ def find_mismatch(text):
             if not opening_brackets_stack or not are_matching(opening_brackets_stack[-1].char, next):
                 return i+1
             opening_brackets_stack.pop()
-        if opening_brackets_stack:
-            return opening_brackets_stack[0].position
-        return "Success"
+    if opening_brackets_stack:
+        return opening_brackets_stack[0].position
+    return "Success"
             #pass
 
 
 def main():
+    dec = input("Input F or I")
+
     text = input()
     mismatch = find_mismatch(text)
-    # Printing answer, write your code here
+    # Printing answer, write your code here'
+    print(mismatch)
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
