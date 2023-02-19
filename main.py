@@ -37,14 +37,17 @@ def main():
     #     file.close()
     #     print(mismatch)
     # elif decis == "I":
-        text = input()
-        mismatch = find_mismatch(text)
-        print(mismatch)
+    text = input()
+    mismatch = find_mismatch(text)
+    print(mismatch)
     # else:
     #     print("Neatpazita komanda")
     # print()
     # Printing answer, write your code here'
 
+
+    # Printing answer, write your code here'
+    print(mismatch)
 
 if __name__ == "__main__":
     main()
